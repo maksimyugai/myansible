@@ -13,7 +13,7 @@
 
   - name: copy wallpaper file
     copy: 
-      src: Downloads/w.jpg
+      src: files/w.jpg
       dest: /usr/share/backgrounds/w.jpg
       owner: root
       group: root
