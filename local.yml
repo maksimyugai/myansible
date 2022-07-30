@@ -10,6 +10,7 @@
         - htop
         - tmux
         - neofetch
+        - python3-psutil
 
   - name: copy wallpaper file
     copy: 
