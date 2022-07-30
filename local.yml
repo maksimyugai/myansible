@@ -11,3 +11,19 @@
         - tmux
         - neofetch
 
+  - name: copy wallpaper file
+    copy: 
+      src: Downloads/w.jpg
+      dest: /usr/share/backgrounds/w.jpg
+      owner: root
+      group: root
+
+  - name: set wallpaper
+    dconf:
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr//share/backgrounds/w.jpg'"
+
+  - name: set wallpaper position
+    dconf:
+      key: "/org/gnome/desktop/background/picture-options"
+      value: "'zoom'"
